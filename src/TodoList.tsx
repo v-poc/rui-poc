@@ -66,7 +66,7 @@ const TodoList: React.FC = () => {
 
   // input change for task item
   const inputChangeTaskItem = (e: ChangeEvent) => {
-    const val = (e.target as HTMLInputElement).value.trim() || "";
+    const val = (e.target as HTMLInputElement).value || "";
     setTaskItem(val);
   };
 
