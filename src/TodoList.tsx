@@ -1,5 +1,5 @@
 import React, { ChangeEvent, KeyboardEvent, useState } from "react";
-import { Button, Empty, Icon, Progress } from "rui-next";
+import { Button, Empty, Icon, Input, Progress } from "rui-next";
 
 // Item Type
 export type ItemType = {
@@ -64,19 +64,6 @@ const TodoList: React.FC = () => {
     setTasks(arr);
   };
 
-  // input change for task item
-  const inputChangeTaskItem = (e: ChangeEvent) => {
-    const val = (e.target as HTMLInputElement).value || "";
-    setTaskItem(val);
-  };
-
-  // input keydown for task item
-  const inputKeydownTaskItem = (e: KeyboardEvent) => {
-    if (e && (e.code === "Enter" || e.keyCode === 13)) {
-      createTask();
-    }
-  };
-
   // calc task progress percent
   const taskProgress = tasks.length ? Math.round(100 * getCompletedCount() / tasks.length) : 0;
 
@@ -84,12 +71,11 @@ const TodoList: React.FC = () => {
     <div className="todo-list-wrapper">
       <div className="main-hd">
         <div className="header">
-          <input
-            type="text"
+          <Input
             placeholder="What are you working on?"
             value={taskItem}
-            onKeyDown={inputKeydownTaskItem}
-            onChange={inputChangeTaskItem}
+            onEnterKeyPress={createTask}
+            onChange={(v: string) => setTaskItem(v)}
           />
           <Button
             type="primary"
