@@ -9,5 +9,5 @@ import "./index.less"; // app styles
 //   <App />,
 //   document.getElementById("root"),
 // );
-const container = document.getElementById("root") as any;
+const container = document.getElementById("root") as HTMLElement;
 createRoot(container).render(<App />);

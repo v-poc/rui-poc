@@ -1,7 +1,7 @@
-import React, { ChangeEvent, KeyboardEvent, useState } from "react";
+import React, { ChangeEvent, useState } from "react";
 import { Button, Empty, Icon, Input, Progress } from "rui-next";
 
-// Item Type
+// Item type
 export type ItemType = {
   text: string;
   done: boolean;

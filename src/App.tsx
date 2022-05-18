@@ -22,7 +22,7 @@ const App: React.FC = () => {
             key="extra-button"
             type="ellipsis"
             className="mr"
-            onClick={() => handleBtnClick()}
+            onClick={handleBtnClick}
           />
         }
         closeable
