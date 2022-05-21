@@ -1,4 +1,5 @@
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, useEffect, useState } from "react";
+import axios from "axios";
 import { Button, Empty, Icon, Input, Progress } from "rui-next";
 
 // Item type
@@ -12,16 +13,20 @@ const TodoList: React.FC = () => {
   // the input task item
   const [taskItem, setTaskItem] = useState<string>("");
   // the tasks list
-  const [tasks, setTasks] = useState<ItemType[]>([
-    {
-      text: "Foobar",
-      done: false,
-    },
-    {
-      text: "Fizzbuzz",
-      done: false,
-    },
-  ]);
+  const [tasks, setTasks] = useState<ItemType[]>([]);
+
+  const fetctTodoList = async () => {
+    try {
+      const res = await axios.post("/api/queryTodoList");
+      setTasks(res?.data?.result || []);
+    } catch (err) {
+      setTasks([]);
+    }
+  };
+
+  useEffect(() => {
+    fetctTodoList();
+  }, []);
 
   // get completed count
   const getCompletedCount = () => {
