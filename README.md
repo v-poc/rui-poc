@@ -2,23 +2,26 @@
 
 ## INTRODUCTION
 
-The HelloWorld demo based on RUI (react-hooks) with Vite 2.
+The HelloWorld demo based on RUI (react-hooks) with Vite 3.
 
 > RUI contains Mobile web UI components based on React.
 
 ## Project setup
 
 ### How to setup your project
+
 ```
 npm i
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
 npm start
 ```
 
 ### Compiles and minifies for production
+
 ```
 npm run build
 ```

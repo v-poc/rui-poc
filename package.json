@@ -1,7 +1,7 @@
 {
   "name": "rui-poc",
   "version": "0.3.2",
-  "description": "The RUI POC - Mobile web UI components based on react-hooks and vite2",
+  "description": "The RUI POC - Mobile web UI components based on react-hooks and vite3",
   "license": "MIT",
   "repository": {
     "type": "git",
