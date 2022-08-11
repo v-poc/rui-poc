@@ -24,6 +24,10 @@ export default [
             text: "Vite plugin mock",
             done: true,
           },
+          {
+            text: "Migration to Pressify",
+            done: true,
+          },
         ],
       };
     },

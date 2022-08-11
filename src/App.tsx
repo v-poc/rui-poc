@@ -5,7 +5,7 @@ import TodoList from "./TodoList";
 // App FC
 const App: React.FC = () => {
   const handleBtnClick = () => {
-    location.href = "https://nikoni.top/rui-next/docs/";
+    location.href = "https://nikoni.top/rui-next/";
   };
 
   return (
@@ -44,7 +44,7 @@ const App: React.FC = () => {
 
       <Flex justify="center">
         <QRCode
-          value="https://nikoni.top/rui-next/docs/"
+          value="https://nikoni.top/rui-next/"
           border
         />
       </Flex>
