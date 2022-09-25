@@ -1,5 +1,5 @@
 import React from "react";
-import { Divider, Flex, Icon, NoticeBar, QRCode, Watermark } from "rui-next";
+import { Divider, Flex, Footer, Icon, NoticeBar, QRCode, Watermark } from "rui-next";
 import TodoList from "./TodoList";
 
 // App FC
@@ -12,6 +12,7 @@ const App: React.FC = () => {
     <div className="watermark-wrapper">
       <Watermark
         content="RUI next"
+        fontColor="rgba(0, 0, 0, .06)"
       />
 
       <NoticeBar
@@ -54,6 +55,21 @@ const App: React.FC = () => {
       >
         RUI Playground
       </Divider>
+
+      <Footer
+        label="Released under the MIT License"
+        links={[
+          { text: "docs", url: "https://nikoni.top/rui-next/" },
+          { text: "demos", url: "https://nikoni.top/rui-next/" },
+          { text: "playground", url: "https://nikoni.top/rui-next/en/playground" },
+        ]}
+        content="Copyright @ 2021-present RUI.next. Built with Vite & React."
+        chips={[
+          { content: "react-hooks" },
+          { content: "vite 3" },
+          { content: "typescript" },
+        ]}
+      />
     </div>
   );
 };
