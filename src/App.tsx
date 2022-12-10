@@ -1,5 +1,13 @@
 import React from "react";
-import { Divider, Flex, Footer, Icon, NoticeBar, QRCode, Watermark } from "rui-next";
+import {
+  Divider,
+  Flex,
+  Footer,
+  Icon,
+  NoticeBar,
+  QRCode,
+  Watermark,
+} from "rui-next";
 import TodoList from "./TodoList";
 
 // App FC
@@ -10,10 +18,7 @@ const App: React.FC = () => {
 
   return (
     <div className="watermark-wrapper">
-      <Watermark
-        content="RUI next"
-        fontColor="rgba(0, 0, 0, .06)"
-      />
+      <Watermark content="RUI next" fontColor="rgba(0, 0, 0, .06)" />
 
       <NoticeBar
         type="alert"
@@ -29,44 +34,32 @@ const App: React.FC = () => {
         closeable
       />
 
-      <Divider
-        contentAlign="center"
-      >
-        Todo List with animated progress
-      </Divider>
+      <Divider contentAlign="center">Todo List with animated progress</Divider>
 
       <TodoList />
 
-      <Divider
-        contentAlign="left"
-      >
-        QR Code
-      </Divider>
+      <Divider contentAlign="left">QR Code</Divider>
 
       <Flex justify="center">
-        <QRCode
-          value="https://nikoni.top/rui-next/"
-          border
-        />
+        <QRCode value="https://nikoni.top/rui-next/" border />
       </Flex>
 
-      <Divider
-        contentAlign="right"
-      >
-        RUI Playground
-      </Divider>
+      <Divider contentAlign="right">RUI Playground</Divider>
 
       <Footer
         label="Released under the MIT License"
         links={[
           { text: "docs", url: "https://nikoni.top/rui-next/" },
           { text: "demos", url: "https://nikoni.top/rui-next/" },
-          { text: "playground", url: "https://nikoni.top/rui-next/en/playground" },
+          {
+            text: "playground",
+            url: "https://nikoni.top/rui-next/en/playground",
+          },
         ]}
         content="Copyright @ 2021-present RUI.next. Built with Vite & React."
         chips={[
           { content: "react-hooks" },
-          { content: "vite 3" },
+          { content: "vite 4" },
           { content: "typescript" },
         ]}
       />

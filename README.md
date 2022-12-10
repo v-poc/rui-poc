@@ -2,7 +2,7 @@
 
 ## INTRODUCTION
 
-The HelloWorld demo based on RUI (react-hooks) with Vite 3.
+The HelloWorld demo based on RUI (react-hooks) with Vite 4.
 
 > RUI contains Mobile web UI components based on React.
 
