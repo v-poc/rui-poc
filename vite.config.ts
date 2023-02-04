@@ -18,4 +18,7 @@ export default defineConfig({
     }),
   ],
   base: "/rui-poc/",
+  build: {
+    chunkSizeWarningLimit: 600,
+  },
 });
