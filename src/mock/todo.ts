@@ -1,10 +1,10 @@
-import { MockMethod } from "vite-plugin-mock";
+import { MockMethod, Recordable } from "vite-plugin-mock";
 
 export default [
   {
     url: "/api/queryTodoList",
-    method: "post", // @ts-ignore
-    response: ({ body, query }) => {
+    method: "post",
+    response: ({ body, query }: { body: Recordable; query: Recordable }) => {
       console.log("response-body: ", body, "\nresponse-query: ", query);
 
       return {
