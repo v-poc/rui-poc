@@ -9,6 +9,7 @@ import {
   Watermark,
 } from "rui-next";
 import TodoList from "./TodoList";
+import pkg from "../package.json";
 
 // App FC
 const App: React.FC = () => {
@@ -44,7 +45,7 @@ const App: React.FC = () => {
         <QRCode value="https://nikoni.top/rui-next/" border color="#21b8a3" />
       </Flex>
 
-      <Divider contentAlign="right">RUI Playground</Divider>
+      <Divider contentAlign="right">RUI PoC (v{pkg.version})</Divider>
 
       <Footer
         label="Released under the MIT License"
