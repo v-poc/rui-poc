@@ -5,7 +5,7 @@ export default [
     url: "/api/queryTodoList",
     method: "post",
     response: ({ body, query }: { body: Recordable; query: Recordable }) => {
-      console.log("response-body: ", body, "\nresponse-query: ", query);
+      console.log("res-body: ", body, "\nres-query: ", query);
 
       return {
         code: 0,
