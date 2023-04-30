@@ -1,6 +1,6 @@
 {
   "name": "rui-poc",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "The RUI POC - Mobile web UI components based on react-hooks and vite4",
   "license": "MIT",
   "repository": {
@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
+    "preview": "npm run build && vite preview",
     "start": "vite"
   },
   "engines": {
@@ -29,6 +29,6 @@
     "rui-next": "latest",
     "typescript": "^5.0.4",
     "vite": "latest",
-    "vite-plugin-mock": "3.0.0"
+    "vite-plugin-mock": "2.9.6"
   }
 }

@@ -8,7 +8,13 @@ export default defineConfig({
     react(),
     viteMockServe({
       mockPath: "src/mock",
-      enable: true,
+      localEnabled: true,
+      prodEnabled: true,
+      logger: true,
+      injectCode: `
+        import { setupMock } from "./mock/index";
+        setupMock();
+      `,
     }),
   ],
   base: "/rui-poc/",
