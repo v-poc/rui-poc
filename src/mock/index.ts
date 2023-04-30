@@ -1,3 +1,4 @@
+// @ts-ignore
 import { createProdMockServer } from "vite-plugin-mock/client";
 import todoMock from "./todo";
 
