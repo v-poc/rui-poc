@@ -10,20 +10,22 @@ The HelloWorld demo based on RUI (react-hooks) with Vite 4.
 
 ### How to setup your project
 
+Install dependencies (use package manager: [pnpm](https://pnpm.io/))
+
 ```
-npm i
+pnpm i
 ```
 
 ### Compiles and hot-reloads for development
 
 ```
-npm start
+pnpm start
 ```
 
 ### Compiles and minifies for production
 
 ```
-npm run build
+pnpm run build
 ```
 
 ### Customize configuration
