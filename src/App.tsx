@@ -54,7 +54,7 @@ const App: React.FC = () => {
           { text: "demos", url: "https://nikoni.top/rui-next/" },
           {
             text: "playground",
-            url: "https://nikoni.top/rui-next/en/playground",
+            url: "https://nikoni.top/rui-next/en/playground/",
           },
         ]}
         content="Copyright @ 2021-present RUI.next. Built with Vite & React."
