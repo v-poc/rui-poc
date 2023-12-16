@@ -20,7 +20,7 @@ export default [
             done: true,
           },
           {
-            text: "Migration to vpressify",
+            text: "Migration to rspress",
             done: true,
           },
         ],
