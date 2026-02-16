@@ -17,7 +17,7 @@
     "node": "^20.19.0 || >=22.12.0",
     "pnpm": ">= 10"
   },
-  "packageManager": "pnpm@10.28.2",
+  "packageManager": "pnpm@10.29.3",
   "pnpm": {
     "peerDependencyRules": {
       "allowedVersions": {
@@ -36,8 +36,8 @@
   "devDependencies": {
     "@types/react": "^18.3.27",
     "@types/react-dom": "^18.3.7",
-    "@vitejs/plugin-react": "^5.1.2",
-    "axios": "^1.13.4",
+    "@vitejs/plugin-react": "^5.1.4",
+    "axios": "^1.13.5",
     "less": "^4.5.1",
     "rui-next": "0.49.3",
     "typescript": "^5.9.3",
