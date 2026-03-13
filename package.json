@@ -1,7 +1,7 @@
 {
   "name": "rui-poc",
-  "version": "0.4.23",
-  "description": "The RUI POC - Mobile web UI components based on react-hooks and vite7",
+  "version": "0.4.24",
+  "description": "The RUI POC - Mobile web UI components based on react-hooks and vite8",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -17,18 +17,7 @@
     "node": "^20.19.0 || >=22.12.0",
     "pnpm": ">= 10"
   },
-  "packageManager": "pnpm@10.29.3",
-  "pnpm": {
-    "peerDependencyRules": {
-      "allowedVersions": {
-        "rollup": "4"
-      }
-    },
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "less"
-    ]
-  },
+  "packageManager": "pnpm@10.32.1",
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
@@ -36,12 +25,12 @@
   "devDependencies": {
     "@types/react": "^18.3.27",
     "@types/react-dom": "^18.3.7",
-    "@vitejs/plugin-react": "^5.1.4",
-    "axios": "^1.13.5",
-    "less": "^4.5.1",
-    "rui-next": "0.49.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "axios": "^1.13.6",
+    "less": "^4.6.3",
+    "rui-next": "^0.49.8",
     "typescript": "^5.9.3",
-    "vite": "^7.3.1",
+    "vite": "^8.0.0",
     "vite-plugin-mock": "2.9.6"
   }
 }
