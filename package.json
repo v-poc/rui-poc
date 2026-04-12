@@ -22,10 +22,10 @@
     "@types/react": "^18.3.27",
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react": "^6.0.1",
-    "axios": "^1.13.6",
-    "less": "^4.6.3",
+    "axios": "^1.15.0",
+    "less": "^4.6.4",
     "rui-next": "^0.49.8",
-    "typescript": "^5.9.3",
+    "typescript": "^6.0.2",
     "vite": "catalog:",
     "vite-plugin-mock": "2.9.6",
     "vite-plus": "catalog:"
@@ -34,5 +34,5 @@
     "node": "^20.19.0 || >=22.12.0",
     "pnpm": ">= 10"
   },
-  "packageManager": "pnpm@10.32.1"
+  "packageManager": "pnpm@10.33.0"
 }
