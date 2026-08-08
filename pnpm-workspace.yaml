@@ -4,6 +4,8 @@ catalog:
   vite: npm:@voidzero-dev/vite-plus-core@latest
   vitest: npm:@voidzero-dev/vite-plus-test@latest
   vite-plus: latest
+minimumReleaseAgeExclude:
+  - rui-next@0.49.12
 overrides:
   vite: "catalog:"
   vitest: "catalog:"
